@@ -9,6 +9,7 @@ import { gsap } from "gsap";
  */
 // Debug
 const gui = new dat.GUI({ width: 360 });
+gui.close();
 
 // Canvas
 const canvas = document.querySelector("canvas.webgl");
@@ -150,6 +151,7 @@ gui
   .onFinishChange(generateGalaxy);
 gui.addColor(parameters, "insideColor").onFinishChange(generateGalaxy);
 gui.addColor(parameters, "outsideColor").onFinishChange(generateGalaxy);
+
 /**
  * Sizes
  */
